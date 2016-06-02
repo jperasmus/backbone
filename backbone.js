@@ -491,7 +491,7 @@
       this._changing = true;
 
       if (!changing) {
-        this._previousAttributes = _.clone(this.attributes);
+        this._previousAttributes[key] = value;
         this.changed = {};
       }
 
